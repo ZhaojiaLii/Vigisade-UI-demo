@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="situation-dangerous-toolbar">
+    <mat-toolbar class="toolbar">
+      <i class="material-icons" routerLink="/menu">keyboard_return</i>
+      <p>SITUATION DANGEROUS</p>
+    </mat-toolbar>
+  </div>
+  <div class="situation-dangerous-content">
+    <div class="situation-dangerous-content-title">
+      <mat-icon class="situation-dangerous-content-title-icon">report</mat-icon>
+      <span>Signaler</span>
+    </div>
+    <div class="situation-dangerous-content-form">
+      <mat-form-field class="situation-dangerous-content-form-field1">
+        <mat-select class="situation-dangerous-content-form-select">
+          <mat-option *ngFor="let types of TypeSelectElements">{{types.type}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="situation-dangerous-content-form-field2">
+        <ng-container>
+          <label>
+            <textarea matInput  class="situation-dangerous-content-form-input" rows="7"></textarea>
+          </label>
+        </ng-container>
+      </mat-form-field>
+      <button mat-raised-button class="situation-dangerous-content-form-valid">
+        <mat-icon>add_photo_alternate</mat-icon>
+        <span>Add a photo</span>
+      </button>
+    </div>
+    <div>
+      <button mat-raised-button class="situation-dangerous-content-valid" routerLink="/welcome">Valid</button>
+    </div>
+  </div>
+</div>

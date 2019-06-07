@@ -1,0 +1,46 @@
+div.container{
+  background: #dcdcdc;
+  overflow: hidden;
+  div.container-toolbar{
+
+    mat-toolbar{
+      background: #dcdcdc;
+      position: absolute;
+      height: 100px;
+      mat-icon{
+      }
+
+      #menu-title-img{
+        height: 30px;
+        width: 70px;
+        position: absolute;
+        left: 50%;
+        margin-left: -35px;
+      }
+    }
+  }
+
+  div.container-list{
+    background: #dcdcdc;
+    position: absolute;
+    //margin-top: 15%;
+    //padding-top:30%;
+    height: 90%;
+    width: 100%;
+    bottom: 0;
+
+    mat-list{
+      .menu-list-item{
+        padding-top: 15px;
+      }
+      .menu-list-avatar{
+        height: 30px;
+        width: 30px;
+      }
+      .menu-list-content{
+        padding-left: 35px;
+        font-size: 25px;
+      }
+    }
+  }
+}

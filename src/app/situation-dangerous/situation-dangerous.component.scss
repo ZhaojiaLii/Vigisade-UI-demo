@@ -1,0 +1,83 @@
+.container{
+  .situation-dangerous-toolbar{
+    mat-toolbar{
+      background: linear-gradient(to right,#01579b, #4fc3f7);
+      position: absolute;
+      height: 150px;
+      i{
+        color: white;
+        position: absolute;
+        margin-top: -10%;
+      }
+      p{
+        position: absolute;
+        color: white;
+        width: 100%;
+        text-align: center;
+        margin-top: -10%;
+      }
+    }
+  }
+  .situation-dangerous-content{
+    position: absolute;
+    background: whitesmoke;
+    height: 90%;
+    width: 100%;
+    bottom: 0;
+    border-radius: 50px 50px 0 0;
+    overflow: hidden;
+
+    .situation-dangerous-content-title{
+      font-size: 25px;
+      font-weight: bolder;
+      margin: 30px 0 0 20px;
+      .situation-dangerous-content-title-icon{
+        height: 40px;
+        width: 40px;
+
+        font-size: 40px;
+        color: #d18200;
+      }
+    }
+    .situation-dangerous-content-form{
+      border-radius: 5px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 30px;
+      .situation-dangerous-content-form-field1{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+        .situation-dangerous-content-form-select{
+        }
+      }
+      .situation-dangerous-content-form-field2{
+        width: 90%;
+        margin-left: 5%;
+        border: 1px;
+        .situation-dangerous-content-form-input{
+
+        }
+      }
+      .situation-dangerous-content-form-valid{
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 25px;
+        margin-bottom: 20px;
+      }
+    }
+    .situation-dangerous-content-valid{
+      border-radius: 25px;
+      color: white;
+      font-size: 20px;
+      background: #0170bb;
+      width: 86%;
+      height: 40px;
+      margin-left: 7%;
+      margin-top: 30px;
+    }
+  }
+}
