@@ -1,16 +1,18 @@
 <div class="container" xmlns="http://www.w3.org/1999/html">
   <mat-toolbar class="toolbar">
     <i class="material-icons" routerLink="/menu">menu</i>
-    <p>VIGISADE</p>
+    <p>Vigisade</p>
   </mat-toolbar>
-  <div class="top-content">
-    <img src="../../assets/images/welcome_image.jpeg" alt="">
-  </div>
+
 
   <div class="container-down-content">
-    <div class="welcome-detail-text">
-      A la Bridoire, la SADE consruira. pour la communauté de communes du Lac d'Aiguebelette, une station d'épuration intercommunale d'eaux usées(10 000 EH extensible à 12 000 EH)
-    </div>
+    <mat-card >
+      <mat-card-subtitle>MAI 2019</mat-card-subtitle>
+      <mat-card-title class="welcome-detail-text">
+        A la Bridoire, la SADE consruira. pour la communauté de communes du Lac d'Aiguebelette, une station d'épuration intercommunale d'eaux usées(10 000 EH extensible à 12 000 EH)
+      </mat-card-title>
+
+    </mat-card>
     <div id="welcome-actions-a-traiter">
       <div id="welcome-actions-a-traiter-text">
         {{actions}} Actions à traiter
@@ -18,13 +20,13 @@
     </div>
 
     <div class="welcome-down-small-cards">
-      <div class="welcome-down-small-cards-content">
+      <div class="welcome-down-small-cards-content" id="welcome-down-small-cards-content-1">
         <div class="welcome-visit-card">
           3
         </div>
         <span class="welcome-visit-card-text"> Visites ce mois-ci</span>
       </div>
-      <div class="welcome-down-small-cards-content">
+      <div class="welcome-down-small-cards-content" id="welcome-down-small-cards-content-2">
         <div class="welcome-visit-card">
           4
         </div>
@@ -34,12 +36,6 @@
     </div>
   </div>
 
-  <div class="container-image-detail">
-    <div class="welcome-detail-picture">
-
-    </div>
-
-  </div>
 
   <div class="container-welcome-down-content">
     <button mat-raised-button id="welcome-down-btn-1" class="welcome-down-btn">

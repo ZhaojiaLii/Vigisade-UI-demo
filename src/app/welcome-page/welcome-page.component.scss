@@ -1,108 +1,64 @@
+@import '~@angular/material/theming';
 div.container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
   mat-toolbar{
     background: linear-gradient(to right,#01579b, #4fc3f7);
     position: absolute;
-    height: 300px;
-    display: flex;
+    @include mat-elevation(4);
+    height: 10%;
+    width: 100%;
     i{
       color: white;
       position: absolute;
-      margin-top: -100px;
     }
     p{
       color: white;
       position: absolute;
       width: 100%;
       text-align: center;
-      margin-top: -100px;
-    }
-  }
-  .top-content{
-    position: absolute;
-    height: 30%;
-    width: 100%;
-    img{
-      position: absolute;
-      top: 50%;
-      margin-left: 10%;
-      height: 125px;
-      border-radius: 25px 25px 0 0;
-      width: 80%;
-    }
-  }
-
-  .container-image-detail{
-    position: absolute;
-    left: 50%;
-    margin-left: -150px;
-    margin-top: 30%;
-    height: 250px;
-    width: 300px;
-    .welcome-detail-picture{
-      display: block;
-      height: 50%;
-      width: 300px;
-      font-size: 15px;
-      font-family: Arial, serif;
-      img{
-        height: 125px;
-        border-radius: 25px 25px 0 0;
-        width: 300px;
-      }
-    }
-    .welcome-detail-text{
-      display: block;
-      position: relative;
-      height: 40%;
-      border-radius: 0 0 25px 25px;
-      font-size: 15px;
-      font-family: Arial, serif;
-      background: white;
-      padding: 10px;
+      margin: 0;
     }
   }
 
   div.container-down-content{
     background: #eeeeee;
-    border-radius: 25px 25px 0 0;
-    height: 70%;
-    width: 100%;
-    bottom: 0;
     position: absolute;
+    height: 90%;
+    width: 100%;
+    margin-top: 20%;
+    mat-card{
 
-    .welcome-detail-text{
-      display: block;
-      position: relative;
-      height: 100px;
-      width: 80%;
-      margin-left: 10%;
-      border-radius: 0 0 25px 25px;
-      font-size: 15px;
-      font-family: Arial, serif;
-      background: white;
+      padding: 15px;
+      border-radius: 1px;
+      @include mat-elevation(4);
+      .welcome-detail-text{
+        display: block;
+        background: white;
+        font-size: 14px;
+      }
     }
 
+
     #welcome-actions-a-traiter{
-      vertical-align: center;
+      @include mat-elevation(4);
       position: absolute;
       margin-top: 30px;
-      height: 50px;
-      display: table;
-      width: 350px;
-      left: 50%;
-      margin-left: -175px;
-      border-radius: 30px;
+      height: 60px;
+      width: 90%;
+      margin-left: 5%;
       text-align: center;
       background: white;
       color: #0288d1;
       #welcome-actions-a-traiter-text{
-        vertical-align: center;
         font-size: 30px;
+        padding-top:10px;
       }
     }
     div.welcome-down-small-cards{
       margin-top: 120px;
-      margin-left: -20px;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -113,16 +69,17 @@ div.container{
         align-items: center;
         justify-content: center;
         .welcome-visit-card{
-          border-radius: 25px;
-          width: 40px;
-          height: 40px;
-          font-size: 30px;
+          border-radius: 30px;
+          width: 50px;
+          height: 50px;
+          font-size: 35px;
           font-weight: bolder;
           text-align: center;
           background: white;
         }
         .welcome-visit-card-text{
           margin-top: 10px;
+          color: #7f7f7f;
         }
       }
 
@@ -132,15 +89,18 @@ div.container{
 
   div.container-welcome-down-content{
     position: absolute;
-    top: 75%;
-    left: 50%;
-    margin-left: -175px;
+    bottom: 10%;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
     .welcome-down-btn{
-      height: 50px;
-      width: 350px;
-      border-radius: 30px;
-      margin-top: 20px;
-      margin-bottom: 10px;
+      position: absolute;
+      margin-left: 5%;
+      height: 35%;
+      width: 90%;
       text-align: center;
     }
     .welcome-down-btn-text{
@@ -155,9 +115,12 @@ div.container{
     }
     #welcome-down-btn-1{
       background: #01579b;
+      margin-top: 20px;
+
     }
     #welcome-down-btn-2{
       background: #d18200;
+      bottom: 0;
     }
   }
 }

@@ -22,7 +22,7 @@ import { HistoryComponent } from './history/history.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatCardModule} from '@angular/material';
 import { SituationDangerousComponent } from './situation-dangerous/situation-dangerous.component';
 
@@ -51,7 +51,8 @@ import { SituationDangerousComponent } from './situation-dangerous/situation-dan
     MatInputModule,
     FormsModule,
     MatCardModule,
-    MatSelectModule
+    MatSelectModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

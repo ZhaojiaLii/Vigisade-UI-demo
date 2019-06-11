@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-profile',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  options: FormGroup;
+  constructor(fb: FormBuilder) {
+    this.options = fb.group({
+      color: 'French',
+    });
+  }
 
   ngOnInit() {
   }
